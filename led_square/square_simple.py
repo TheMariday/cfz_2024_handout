@@ -3,6 +3,7 @@ from plasma import plasma2040, WS2812
 NUM_LEDS = 400
 WIDTH = 20
 
+
 def mapping(index):
     y = int(index / WIDTH)
     x = index % WIDTH
@@ -10,8 +11,9 @@ def mapping(index):
         x = WIDTH - 1 - x
     return x, y
 
+
 def rainbow(frame_number, x, y):
-    h = (x*0.5 + frame_number/10)/WIDTH
+    h = (x * 0.5 + frame_number / 10) / WIDTH
     s = 1.0
     v = 1.0
     return h, s, v

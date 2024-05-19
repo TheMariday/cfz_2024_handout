@@ -196,3 +196,5 @@ def rainbow_x(frame_number, x, y):
 
 You've made it to the bottom of the handout! Have a picture of my cat for all your hard work
 ![](media%2Fcat.png)
+
+If you want to reach out you can find me on [Telegram](t.me/themariday) or [Twitter](twitter.com/themariday)! Love love!

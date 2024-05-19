@@ -78,7 +78,7 @@ Make sure your battery can output the voltage you need for your system!
 
 All USB battery banks will output 5v, but some that support USB-C can go as high as 28v! Great if you want to power your... Minifridge?
 
-## Output Current
+### Output Current
 
 This is the most energy a battery can dump through its connectors. For USB, this usually maxes out at 3 amps as the cables would need to be much thicker to handle more!
 

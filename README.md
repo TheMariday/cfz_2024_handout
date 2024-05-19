@@ -2,10 +2,15 @@
 
 This is a supplimental document to the panel, but please do use for reference and share where you fancy!
 No copyright or any of that nonsense, copy and paste away!
+> [!CAUTION]
+> This is Mariday's simplified opinion, there are many things omitted here and complexities that have been breezed over
 
 ## LED Types
 
-Highbeam used Lilypad LEDs as at the time, the "Seed" style leds were not commercially avaliable 
+What we're looking for here is 5v "addressable" leds, these can be APA102, WS2812b,SK98 or even have no chip name like the "seed" style!
+
+> [!WARNING]
+> DO NOT USE 12v WS2815 LEDS for pretty much anything. At their worst, they are 3x less efficient than WS2812b
 
 | Image                           | Type         | £/LED                                                                                       | Pros                                                                                              | Cons                                                    |
 |---------------------------------|--------------|---------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|---------------------------------------------------------|
@@ -13,10 +18,10 @@ Highbeam used Lilypad LEDs as at the time, the "Seed" style leds were not commer
 | ![](media%2Fstrip_style_leds.jpg) | Strip        | [£0.05](aliexpress.com/item/32852794406.html) | - Very bright<br/>- Adhesive backing<br/>- Lots of densities & sizes <br/>- Waterproofing options | - Cannot be bent<br/>- Gets hot                         |
 | ![](media%2Flillypad_leds.png)    | Lilypad      | [£0.13](aliexpress.com/item/32633490802.html)                                               | - Very bright<br/>- Flexible                                                                      | - No waterproofing<br/>- Expensive<br/>- Also gets hot  |
 
-> [!WARNING]
-> NEVER USE 12v WS2815 LEDS for heavy color. At their worst, they are 3x less efficient than WS2812b
+> [!NOTE]
+> Highbeam used Lilypad LEDs as at the time, the "Seed" style leds were not commercially available!
 
-## Types of Microcontroller
+## Microcontrollers
 
 | Image                 | Name            | £                                                                               | Pros                                                                                                                | Cons                                                                                                               |
 |-----------------------|-----------------|---------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|
@@ -39,14 +44,18 @@ Highbeam used Lilypad LEDs as at the time, the "Seed" style leds were not commer
 
 One thing I didn't cover in the talk is tools!
 
-I'm a big fan of Adam Savages approach to tools, buy the cheapest you can find, then when you're sick of it, you'll know how much you want to spend on it.
+I'm a big fan of Adam Savages approach to tools, buy the cheapest you can find, 
+then when you're sick of it, you'll know how much you want to spend on it.
+
 For instance, my pliers cost me £3 from Maplins 10 years ago, but my wire cutters cost around £80.
+
 Once you know what you'll use the most, you'll know what to spend.
 
 The below are just my suggestions and there are lots of alternatives depending on what you're using them for!
+
 For instance, I wouldn't use my TS80P soldering iron for big battery wires
 
-### A basic list of Electronic Fursuit tools:
+### A list of some electronic fursuit tools:
 
 
 | Image of mine                   | Name           | Cheap                                                                                                 | Expensive (mine)                                                                                                                              | Notes                                                                                                                                                                    |
@@ -57,8 +66,7 @@ For instance, I wouldn't use my TS80P soldering iron for big battery wires
 | ![](media%2Fwire_cutters.jpg)   | Wire Cutters   | [£3.50 No Brand](https://thepihut.com/products/diagonal-cutters)                                      | [£100 Lindstrom RX8151 side cutters](https://uk.rs-online.com/web/p/cutters/1906703/)                                                         | I wouldn't spend the money on these unless you're using them daily. But if you are, you absolutely need to spend at least £50 on some decent ones!                       |
 
 
-### Here are some optional extras that will help when things go wrong
-
+### Some optional extras that will help when things go wrong
 
 
 | Image                            | Name                   | Price (mine)                                                                                        | Notes                                                                                                                                                                             |
@@ -80,7 +88,8 @@ All USB battery banks will output 5v, but some that support USB-C can go as high
 
 ### Output Current
 
-This is the most energy a battery can dump through its connectors. For USB, this usually maxes out at 3 amps as the cables would need to be much thicker to handle more!
+This is the most energy a battery can dump through its connectors. 
+For USB, this usually maxes out at 3 amps as the cables would need to be much thicker to handle more!
 
 However, you can increase the voltage **if** your system can handle that!
 
@@ -90,7 +99,8 @@ So lots of manufacturers measure capacity in milli-amp hours or mAh, which in mo
 
 It's much useful to know the **watt-hours / Wh** of the battery! This can usually be found by multiplying the batteries **amp-hours** by **3.7**
 
-To find how long your battery will last, multiply your output voltage by the number of amps you're intending to draw, then divide this by the battery capacity then times by 0.8 for general losses.
+To find how long your battery will last, multiply your output voltage by the number of amps you're intending to draw, 
+then divide this by the battery capacity then times by 0.8 for general losses.
 
 For example:
 
@@ -99,6 +109,8 @@ For example:
 - I'm using the Anker Nano which has **36 watt-hours**
 - So my total run-tim is about **3 hours** (`(10 watts / 36 watts)*0.8`)
 
+### A table of a few battery suggestions
+
 
 | Image                  | Price                                                                                        | Output                                                 | Notes                                                                                                                         |
 |------------------------|----------------------------------------------------------------------------------------------|--------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
@@ -106,11 +118,25 @@ For example:
 | ![](media%2Fprime.png) | [£180 Anker Prime](https://www.anker.com/uk/products/a1340-250w-power-bank)                  | 3x3A +<br>2XUSBC & USBA<br>5v-28v<br>100Wh             | Power everything forever                                                                                                      |
 | ![](media%2Flipo.jpg)  | [LiPo](https://www.youtube.com/watch?v=Dcu1z8vAgkQ&ab_channel=TeamFortress2-AllSounds)       | Nope<br>Do not<br>Just why                             | The Anker Prime has enough power to run an 82 Inch LED TV.<br>WHAT THE HELL DO YOU NEED MORE FOR?<br> Also LiFe exists y'know |
 
+## Mapping
+
+#TODO
+
+## Effects
+
+#TODO
+
 ## Code
+
+All the code I used during the presentation can be found in the [led square](led_square) folder of this readme!
 
 ## General Advice
 
-## LED Square Tutorial
+- Make mistakes early!
+- Be safe!
+- Enjoy yourself!
 
+# Well done!
 
-## Tools
+You've made it to the bottom of the handout! Have a picture of my cat for your hard work
+![](media%2Fcat.png)

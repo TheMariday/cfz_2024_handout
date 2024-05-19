@@ -118,25 +118,81 @@ For example:
 | ![](media%2Fprime.png) | [£180 Anker Prime](https://www.anker.com/uk/products/a1340-250w-power-bank)                  | 3x3A +<br>2XUSBC & USBA<br>5v-28v<br>100Wh             | Power everything forever                                                                                                      |
 | ![](media%2Flipo.jpg)  | [LiPo](https://www.youtube.com/watch?v=Dcu1z8vAgkQ&ab_channel=TeamFortress2-AllSounds)       | Nope<br>Do not<br>Just why                             | The Anker Prime has enough power to run an 82 Inch LED TV.<br>WHAT THE HELL DO YOU NEED MORE FOR?<br> Also LiFe exists y'know |
 
-## Mapping
-
-#TODO
-
-## Effects
-
-#TODO
 
 ## Code
 
 All the code I used during the presentation can be found in the [led square](led_square) folder of this readme!
 
-## General Advice
+Here's a nice generic template for how I usually do things:
+
+```python
+def some_kind_of_mapping(led_index):
+    # Do some kind of mapping here that turns your led index into an x y coordinate
+    return x, y
+
+
+def some_kind_of_effect(frame_number, x, y):
+    # Do some kind of cool thing that takes the frame number, x and y and produce an HSV value
+    return h, s, v
+
+
+my_strip = some_led_driver_library()
+
+frame_number = 0
+
+while True:
+    for led_index in range(NUM_LEDS):
+        x, y = some_kind_of_mapping(led_index)
+        h, s, v = some_kind_of_effect(frame_number, x, y)
+        my_strip.set_hsv(led_index, h, s, v)
+    frame_number += 1
+```
+
+## Mapping
+
+Mapping is the way we turn 1D led indexes into 2D positions
+
+Here's the one used in my demo square where `WIDTH` is set to 20 for my example:
+
+Nothing here should be surprising, perhaps except the `%` which just means "remainder"
+
+```python
+def mapping(index):
+    
+    y = int(index / WIDTH)
+    x = index % WIDTH
+    
+    if y % 2 == 1:
+        x = WIDTH - 1 - x
+        
+    return x, y
+```
+
+## Effects
+
+Effects in short take a 2D position along with the current time and produce an RGB or HSV value
+
+Here's a super simple effect for making an animated rainbow that moves the rainbow along the x axis
+
+```python
+def rainbow_x(frame_number, x, y):
+    
+    h = (x * RAINBOW_SIZE + frame_number / RAINBOW_SPEED) / WIDTH
+    s = 1.0
+    v = 1.0
+    
+    return h, s, v
+```
+
+
+## Closing Advice
 
 - Make mistakes early!
 - Be safe!
 - Enjoy yourself!
+- Get Mariday some coffee, they are a very eepy bean as they write this
 
 # Well done!
 
-You've made it to the bottom of the handout! Have a picture of my cat for your hard work
+You've made it to the bottom of the handout! Have a picture of my cat for all your hard work
 ![](media%2Fcat.png)

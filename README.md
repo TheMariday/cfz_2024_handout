@@ -108,7 +108,7 @@ For example:
 - My LEDs draw **2 amps** at **5 volts**
 - This is equal to **10 watts** (`2 amps * 5 volts`)
 - I'm using the Anker Nano which has **36 watt-hours**
-- So my total run-tim is about **3 hours** (`(10 watts / 36 watts)*0.8`)
+- So my total run-tim is about **3 hours** (`(10 watts / 36 watt-hours)*0.8`)
 
 ### A table of a few battery suggestions
 

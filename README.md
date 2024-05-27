@@ -27,7 +27,7 @@ What we're looking for here is 5v "addressable" leds, these can be APA102, WS281
 |------------------------------------|-----------------|----------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|
 | ![](media%2Fplasma.png)            | Pimoroni Plasma | [£14.10](https://shop.pimoroni.com/products/plasma-2040) | - Has built in USB-C power management<br/>- Supports Micro/CircuitPython and C++<br/>- No soldering required       | - Weak processor, can only do about 100 leds worth of heavy processing<br/>- Realistically only supports 1 channel |
 | ![](media%2Fteensy.png)            | Teensy 4.1      | [£29.70](https://thepihut.com/products/teensy-4-1)       | - Absolute unit of a processor<br/>- I've driven 10k LEDs with one of these<br/>- Great as a driver board over USB | - Expensive<br/>- Only supports C style programming<br/>- Requires soldering & external power management           |
-
+|TODO|Arduino nano|£10|TODO|TODO|
 > [!TIP]
 > If you're gonna use the Teensy 4.1, checkout my [FC-Mega](https://github.com/TheMariday/FC-Mega) library. It allows you to plug in your Teensy to your PC and send it LED data over USB. Super simple!
 
@@ -74,7 +74,6 @@ For instance, I wouldn't use my TS80P soldering iron for big battery wires
 | ![](media%2Fmeter.png)           | Multimeter             | [£17 and up](https://thepihut.com/products/digital-multimeter-model-9205b)                          | You can get really expensive multimeters, however I've never needed that level of precision or reliability personally                                                             |
 | ![](media%2Fcrocodile_clips.png) | Crocodile clips        | [£3 for 12](https://thepihut.com/products/short-wire-alligator-clip-test-lead-set-of-12)            | Side note, don't use these for anything more than like 1 amp, I've had some serious issues where the problem turned out to be my crocodile clips getting //rather// toasty!       |
 | ![](media%2Fpower_supply.jpg)    | Bench top power supply | [£80 at least](https://uk.rs-online.com/web/p/bench-power-supplies/1757368)                         | Get a decent one of these! This is a good model and I would recommend checking out RS components for the "right" price for these. There are a lot of shite ones on Ebay / Amazon! |
-| ![](media%2Fscope.jpg)           | Oscilloscope           | [£65 at least](https://www.amazon.co.uk/Hantek-Digital-Storage-Oscilloscope-PC-Based/dp/B015XTOOKY) | Mine is the cheapest, nastiest one you can get. But you know what? I haven't needed more from it! But a decent one will probably set you back [£400](https://www.siglent.eu/product/13555385/siglent-sds804x-hd-4ch-70mhz-12bit-oscilloscope) or more                    |
 
 ## Batteries
 

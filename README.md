@@ -14,9 +14,9 @@ What we're looking for here is 5v "addressable" leds, these can be APA102, WS281
 
 | Image                             | Type         | £/LED                                               | Pros                                                                                              | Cons                                                    |
 |-----------------------------------|--------------|-----------------------------------------------------|---------------------------------------------------------------------------------------------------|---------------------------------------------------------|
-| ![](media%2Fseed_style_leds.jpg)  | "Seed" style | [£0.05](aliexpress.com/item/1005004633923201.html)  | - Flexible<br/>- Lightweight<br/>- Waterproof                                                     | - Not as bright as the other types<br/>- Hard to solder |
-| ![](media%2Fstrip_style_leds.jpg) | Strip        | [£0.05](aliexpress.com/item/32852794406.html)       | - Very bright<br/>- Adhesive backing<br/>- Lots of densities & sizes <br/>- Waterproofing options | - Cannot be bent<br/>- Gets hot                         |
-| ![](media%2Flillypad_leds.png)    | Lilypad      | [£0.13](aliexpress.com/item/32633490802.html)       | - Very bright<br/>- Flexible                                                                      | - No waterproofing<br/>- Expensive<br/>- Also gets hot  |
+| ![](media%2Fseed_style_leds.jpg)  | "Seed" style | [£0.05](https://www.aliexpress.com/item/1005004633923201.html)  | - Flexible<br/>- Lightweight<br/>- Waterproof                                                     | - Not as bright as the other types<br/>- Hard to solder |
+| ![](media%2Fstrip_style_leds.jpg) | Strip        | [£0.05](https://www.aliexpress.com/item/32852794406.html)       | - Very bright<br/>- Adhesive backing<br/>- Lots of densities & sizes <br/>- Waterproofing options | - Cannot be bent<br/>- Gets hot                         |
+| ![](media%2Flillypad_leds.png)    | Lilypad      | [£0.13](https://www.aliexpress.com/item/32633490802.html)       | - Very bright<br/>- Flexible                                                                      | - No waterproofing<br/>- Expensive<br/>- Also gets hot  |
 
 > [!NOTE]
 > Highbeam used Lilypad LEDs as at the time, the "Seed" style leds were not commercially available!
@@ -199,4 +199,4 @@ You've made it to the bottom of the handout! Have a picture of my cat for all yo
 
 Massive thanks to Max, Reiu and Pixelsuchter for feedback on this document along with Tux for their wonderful co-hosting and Lutis for the design of the EF coin.
 
-If you want to reach out you can find me on [Telegram](t.me/themariday) or [Twitter](twitter.com/themariday)! Love love!
+If you want to reach out you can find me on [Telegram](https://www.t.me/themariday) or [Twitter](https://www.twitter.com/themariday)! Love love!
